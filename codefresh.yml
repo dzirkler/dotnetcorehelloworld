@@ -9,7 +9,7 @@ steps:
     commands:
       - bash -c "./build.sh"
 
-  build_step:
+  buildimage:
     type: build
     image_name: dzirkler/dotnetcorehelloworld
     dockerfile: Dockerfile
