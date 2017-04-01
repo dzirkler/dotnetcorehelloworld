@@ -7,16 +7,16 @@ the `/hwapp` folder, and is simply the result of a `dotnet new console -o hwapp`
 [.NET Core Getting Started](https://www.microsoft.com/net/core) page.
 
 
-##Build locally for testing:
+## Build locally for testing:
 
-1. From the project directory (where this readme is located), build the app: 
+1. From the project directory (where this readme is located), build the app:  
 `docker run -it --rm -v "$(pwd):/src" --workdir /src microsoft/dotnet:1.1.1-sdk /bin/bash /src/build.sh`
-1. Build the docker image:
+1. Build the docker image:  
 `docker build . --tag organizaton/repo:tag`
-1. Run the new image:
+1. Run the new image:  
 `docker run organization/repo:tag`
 
-##Build using CI in CodeFresh
+## Build using CI in CodeFresh
 
 1. Fork Repo to your own GitHub Org
 1. Update `codefresh.yml` with your docker hub repo and image name.
