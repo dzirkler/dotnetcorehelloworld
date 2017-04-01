@@ -41,6 +41,7 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 
 
 
-## Thanks to
-* The general approach was borrowed from [Steve Lasker's Blog](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
+### Thanks to
+---
+The general approach was borrowed from [Steve Lasker's Blog](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
