@@ -17,6 +17,8 @@ The way this works, is we fire up a container with the SDK and perform a build o
 the output folder from the build (`/out`) to create a new image. The same paradigm works in CodeFresh and locally.
 
 
+
+
 ## Build locally for testing:
 
 1. From the project directory (where this readme is located), build the app:  
@@ -26,6 +28,9 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 1. Run the new image:  
 `docker run organization/repo:tag`
 
+
+
+
 ## Build using CI in CodeFresh
 
 1. Fork Repo to your own GitHub Org
@@ -34,6 +39,8 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 1. Marvel at the awesomeness of your own .NET Core app auto build!
 
 
-### Thanks to
-* The general approach was borrowed from [Steve Laska's Blog](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
+
+
+## Thanks to
+* The general approach was borrowed from [Steve Lasker's Blog](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
