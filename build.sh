@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -e
-rm -fr /src/out
-dotnet restore /src/hwapp
-dotnet publish -c Release -o /src/out /src/hwapp
+rm -fr ./out
+dotnet restore ./hwapp
+dotnet publish -c Release -o ./out ./hwapp
 
 
 
