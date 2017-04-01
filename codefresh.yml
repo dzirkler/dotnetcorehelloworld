@@ -24,7 +24,7 @@ steps:
         only:
           - master
 
-   push_image1:
+  push_image1:
     type: push
     candidate: ${{buildimage}}
     tag: ${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_SHORT_REVISION}}
