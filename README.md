@@ -22,7 +22,8 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 1. From the project directory (where this readme is located), build the app:  
 `docker run -it --rm -v "$(pwd):/src" --workdir /src microsoft/dotnet:1.1.1-sdk /bin/bash /src/build.sh`
 1. Build the docker image:  
-`docker build . --tag organizaton/repo:tag`
+`docker build . --tag organizaton/repo:tag`  
+    * Use your own org and repo names here.
 1. Run the new image:  
 `docker run organization/repo:tag`
     * You should see "Hello World!" written in your console.
@@ -33,7 +34,7 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 1. Fork Repo to your own GitHub Org
 1. Update `codefresh.yml` with your docker hub repo and image name.
 1. Configure a new repo in [CodeFresh](http://codefresh.io) to build from your new forked repo
-    * Be sure you use the `codefresh.yml` option)
+    * Be sure you use the `codefresh.yml` option
 1. Marvel at the awesomeness of your own .NET Core app auto build!
 
 
