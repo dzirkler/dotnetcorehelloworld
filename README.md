@@ -1,4 +1,4 @@
-# .NET Core Hello World Codefresh Demo
+# .NET Core Hello World CodeFresh Demo
 
 [![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=dzirkler&repoName=dotnetcorehelloworld&branch=master&pipelineName=dotnetcorehelloworld&accountName=dzirkler&type=cf-1)]( https://g.codefresh.io/repositories/dzirkler/dotnetcorehelloworld/builds?filter=trigger:build;branch:master;service:58e01fab16247f01003ce312~dotnetcorehelloworld)
 
@@ -15,8 +15,8 @@ need to include our source code in the container!
 
 The way this works, is we fire up a container with the SDK and perform a build on a mounted volume. Then, we use
 the output folder from the build (`/out`) to create a new image. The same paradigm works in CodeFresh and locally.
-  
-  
+
+
 ## Build locally for testing:
 
 1. From the project directory (where this readme is located), build the app:  
@@ -25,17 +25,18 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 `docker build . --tag organizaton/repo:tag`
 1. Run the new image:  
 `docker run organization/repo:tag`
-  
-  
+    * You should see "Hello World!" written in your console.
+
+
 ## Build using CI in CodeFresh
 
 1. Fork Repo to your own GitHub Org
 1. Update `codefresh.yml` with your docker hub repo and image name.
-1. Configure CodeFresh to build from the forked repo, using the `codefresh.yml`.
+1. Configure a new repo in [CodeFresh](http://codefresh.io) to build from your new forked repo
+    * Be sure you use the `codefresh.yml` option)
 1. Marvel at the awesomeness of your own .NET Core app auto build!
-  
-  
-### Thanks to
----
+
+
+## Thanks
 The general approach was borrowed from [Steve Lasker's Blog](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
