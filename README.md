@@ -22,7 +22,7 @@ the output folder from the build (`/out`) to create a new image. The same paradi
 1. From the project directory (where this readme is located), build the app:  
 `docker run -it --rm -v "$(pwd):/src" --workdir /src microsoft/dotnet:1.1.1-sdk /bin/bash /src/build.sh`
 1. Build the docker image:  
-`docker build . --tag organizaton/repo:tag`  
+`docker build . --tag organization/repo:tag`  
     * Use your own org and repo names here.
 1. Run the new image:  
 `docker run organization/repo:tag`
