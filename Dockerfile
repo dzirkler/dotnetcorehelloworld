@@ -6,5 +6,5 @@ RUN /src/build.sh
 
 FROM microsoft/dotnet:1.1.1-runtime AS run
 WORKDIR /app
-COPY ./hwapp/out .
+COPY --from=sdk /src/hwapp/out .
 ENTRYPOINT ["dotnet", "/app/hwapp.dll"]
